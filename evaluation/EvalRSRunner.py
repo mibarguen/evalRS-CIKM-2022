@@ -377,9 +377,6 @@ class EvalRSRunner:
                                   aws_secret_access_key=self.aws_secret_access_key,
                                   participant_id=self.participant_id,
                                   bucket_name=self.bucket_name)
-        if debug:
-            time_for_submission = (time.time() - start)/60
-            print(f"Entire Process Duration: {time_for_submission} Minutes")
 
     def __hash__(self):
         hash_inputs = [
