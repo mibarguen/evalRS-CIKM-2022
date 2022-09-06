@@ -317,6 +317,7 @@ class EvalRSRunner:
                                   aws_secret_access_key=self.aws_secret_access_key,
                                   participant_id=self.participant_id,
                                   bucket_name=self.bucket_name)
+        return out_dict
 
     def __hash__(self):
         hash_inputs = [
